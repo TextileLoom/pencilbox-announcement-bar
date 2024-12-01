@@ -1,5 +1,17 @@
 // announcement-widget.js
 
+// Function to load a CSS file dynamically
+function loadCSS(url) {
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = url;
+  document.head.appendChild(link);
+}
+
+// Load the CSS file from JSDelivr
+loadCSS('https://cdn.jsdelivr.net/gh/TextileLoom/pencilbox-announcement-bar@latest/announcement-widget.css');
+
 // Templates stored as strings
 const templates = {
   template1: `
