@@ -19,12 +19,12 @@
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
   
-  .announcement-bar.show {
+  .pencilbox-announcement-bar.show {
     opacity: 1;
     transform: translateY(0);
   }
   
-  .announcement-bar .close-button {
+  .pencilbox-announcement-bar .close-button {
     background-color: red;
     color: #fff;
     border: none;
