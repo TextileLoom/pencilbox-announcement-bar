@@ -1,35 +1,32 @@
 /* Example styles for the announcement widget */
 .pencilbox-announcement-bar {
-    position: fixed;
-    top: 20px;
-    /*left: 50%;*/
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #fff;
-    padding: 15px 30px;
-    width: 60%;
-    border-radius: 1000px;
-    z-index: 100;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-  .pencilbox-announcement-bar.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .pencilbox-announcement-bar .close-button {
-    background-color: red;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
+  position: fixed;
+  top: 20px;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 15px 30px;
+  width: 60%;
+  border-radius: 1000px;
+  z-index: 100;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
-  
+.pencilbox-announcement-bar.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pencilbox-announcement-bar .close-button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
