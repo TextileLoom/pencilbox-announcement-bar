@@ -3,7 +3,7 @@
 // Templates stored as strings
 const templates = {
   template1: `
-    <span>🎉️ Big Announcement: Textile releases Pencilbox Chrome extension!!</span>
+    <span>🎉️ BIG NEWS: Textile releases Pencilbox Chrome extension!!</span>
     <div class="two-buttons">
       <a href="https://vimeo.com/845300600" target="_blank" rel="noopener noreferrer">
         <button class="announcement-bar_btn gradient-blob instagram"><span class="gradient"></span>Watch Video</button>
