@@ -11,7 +11,7 @@
 // Function to show the announcement widget
 function showAnnouncement() {
   // Find the placeholder div where the content will be injected
-  var announcementBar = document.querySelector('.pencilbox-announcement');
+  var announcementBar = document.querySelector('.pencilbox-announcement-bar');
   
   if (announcementBar) {
     // Add content to the announcement bar
