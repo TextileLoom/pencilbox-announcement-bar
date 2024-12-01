@@ -1,9 +1,11 @@
-/* Example styles for the announcement widget */
+@import url('https://use.typekit.net/edo0riq.css');
+
+/* Styles for the announcement widget */
 .pencilbox-announcement-bar {
   position: fixed;
   top: 20px;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(1, 2, 3, 0.6);
   color: #fff;
   padding: 15px 30px;
   width: 60%;
@@ -16,6 +18,40 @@
   opacity: 0;
   transform: translateY(-100%);
   transition: opacity 0.5s ease, transform 0.5s ease;
+  font-family: 'Ainslie', sans-serif;
+  font-weight: 400;
+  font-size: .1.5rem;
+  text-decoration: none 
+}
+.two-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem
+}
+
+a {
+  text-decoration: none;
+}
+
+.announcement-bar_btn{
+  display: inline-block;
+  box-sizing: border-box;
+  display: flex; /* Use flexbox for vertical alignment */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  font-size: 1rem;
+  font-weight: normal;
+  width: 150px;
+  height: 37px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  z-index: 0;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  text-decoration: none !important;
 }
 
 .pencilbox-announcement-bar.show {
@@ -23,10 +59,124 @@
   transform: translateY(0);
 }
 
-.pencilbox-announcement-bar .close-button {
-  background-color: red;
+  @media screen and (max-width: 1280px) {
+    .pencilbox-announcement-bar {
+      display: none;
+    }
+}
+
+/****************************************
+ * Glowring Button
+ ****************************************/
+
+.announcement-bar_btn.glowring {
   color: #fff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+  background: #111;
+}
+
+.announcement-bar_btn.glowring:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 200%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.announcement-bar_btn.glowring:active {
+  color: #000
+}
+
+.announcement-bar_btn.glowring:active:after {
+  background: transparent;
+}
+
+.announcement-bar_btn.glowring:hover:before {
+  opacity: 1;
+}
+
+.announcement-bar_btn.glowring:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/****************************************
+ * Gradient-Blob Button
+ ****************************************/
+
+ .announcement-bar_btn.gradient-blob {
+  overflow: hidden;
+  transform: translatez(0);
+  border: transparent;
+}
+
+.announcement-bar_btn.gradient-blob:hover{
+  border: 1px solid #fff ;
+  transition: all 0.7s ease-out 0s;
+}
+
+.instagram {
+  color: white;
+  background: #EE2D69;
+  transition: all 0.2s ease-out 0s;
+  position: relative; /* Ensure the button is positioned relative to its container */
+}
+
+.gradient {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(90px circle at top center, rgba(90,10,152,.6) 30%, rgba(255,255,255,0));
+  transition: all 0s ease-out 0s;
+  transform: translatex(-140px);
+  animation: 11s linear 0s infinite move;
+  filter: blur(10px); /* Increase blur for the gradient */
+}
+
+@keyframes move {
+  0% {
+    transform: translatex(-200px); /* Start further left */
+  }
+  25% {
+    transform: translatex(200px); /* Move further right */
+    opacity: 0.5; /* Increase opacity */
+  }
+  50% {
+    transform: translatex(200px); /* Stay further right */
+    opacity: 1; /* Full opacity */
+    background: radial-gradient(40px circle at bottom center, rgba(238,88,63,.5) 30%, rgba(255,255,255,0));
+  }
+  75% {
+    transform: translatex(-200px); /* Move back further left */
+    opacity: 0.5; /* Decrease opacity */
+  }
+  100% {
+    opacity: 1; /* Full opacity */
+    transform: translatex(-200px); /* End further left */
+    background: radial-gradient(90px circle at top center, rgba(238,88,63,.5) 30%, rgba(255,255,255,0));
+  }
 }
