@@ -3,26 +3,24 @@
 /* Styles for the announcement widget */
 .pencilbox-announcement-bar {
   position: fixed;
-  top: 20px;
-  transform: translateX(-50%);
-  background-color: rgba(1, 2, 3, 0.6);
+  top: 20px; /* Set the vertical position */
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
+  background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
   padding: 15px 30px;
-  width: 60%;
-  border-radius: 1000px;
+  border-radius: 50px; /* Rounded corners */
   z-index: 100;
+  width: auto;
+  max-width: 90%; /* Prevent overflow */
   text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   opacity: 0;
-  transform: translateY(-100%);
   transition: opacity 0.5s ease, transform 0.5s ease;
   font-family: 'Ainslie', sans-serif;
   font-weight: 400;
-  font-size: .1.5rem;
-  text-decoration: none 
+  font-size: 1rem;
 }
+
 .two-buttons {
   display: flex;
   justify-content: center;
@@ -37,9 +35,9 @@ a {
 .announcement-bar_btn{
   display: inline-block;
   box-sizing: border-box;
-  display: flex; /* Use flexbox for vertical alignment */
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   font-size: 1rem;
   font-weight: normal;
   width: 150px;
@@ -56,13 +54,13 @@ a {
 
 .pencilbox-announcement-bar.show {
   opacity: 1;
-  transform: translateY(0);
+  transform: translate(-50%, 0%) !important;
 }
 
-  @media screen and (max-width: 1280px) {
-    .pencilbox-announcement-bar {
-      display: none;
-    }
+@media screen and (max-width: 1280px) {
+  .pencilbox-announcement-bar {
+    display: none;
+  }
 }
 
 /****************************************

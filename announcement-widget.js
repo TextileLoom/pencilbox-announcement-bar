@@ -1,6 +1,4 @@
-// announcement-widget.js
-
-// Function to load a CSS file dynamically
+// Function to load CSS file dynamically
 function loadCSS(url) {
   const link = document.createElement('link');
   link.rel = 'stylesheet';
@@ -54,9 +52,9 @@ function showAnnouncement(templateKey) {
   }
 }
 
-// Check if the announcement widget should be shown
+
 window.onload = function() {
   setTimeout(function() {
-    showAnnouncement('template1');  // Show template 1 as the default
+    showAnnouncement('template1');  
   }, 1000);
 };
