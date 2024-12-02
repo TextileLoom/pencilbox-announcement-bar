@@ -22,18 +22,27 @@ const templates = {
         <button class="announcement-bar_btn glowring">Get Extension</button>
       </a>
     </div>
+    <div class="close-btn" onclick="document.querySelector('.pencilbox-announcement-bar').classList.remove('show')">
+      <i class="fas fa-times"></i>
+    </div>
   `,
   template2: `
-    <span>T2_Big news! We are launching a new feature next week!</span>
-      <a href="https://chromewebstore.google.com/detail/pencilbox-redirector/jnljfmoabjhiaifnkoflbakodmgbpfll?hl=en-US&utm_source=ext_sidebar" target="_blank" rel="noopener noreferrer">
-        <button class="announcement-bar_btn glowring">Get Extension</button>
+    <span>placeholder text</span>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <button class="announcement-bar_btn glowring">placeholder text</button>
       </a>
+       <div class="close-btn" onclick="document.querySelector('.pencilbox-announcement-bar').classList.remove('show')">
+      <i class="fas fa-times"></i>
+    </div>
   `,
   template3: `
-    <span>T3_Holiday sale! 20% off on all items this weekend!</span>
-      <a href="https://chromewebstore.google.com/detail/pencilbox-redirector/jnljfmoabjhiaifnkoflbakodmgbpfll?hl=en-US&utm_source=ext_sidebar" target="_blank" rel="noopener noreferrer">
-        <button class="announcement-bar_btn glowring">Get Extension</button>
+    <span>placeholder text</span>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <button class="announcement-bar_btn glowring">placeholder text</button>
       </a>
+       <div class="close-btn" onclick="document.querySelector('.pencilbox-announcement-bar').classList.remove('show')">
+      <i class="fas fa-times"></i>
+    </div>
   `
 };
 
