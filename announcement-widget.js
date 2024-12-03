@@ -8,7 +8,7 @@ function loadCSS(url) {
 }
 
 // Load the CSS file from UNPKG
-loadCSS("https://unpkg.com/pencilbox-announcement-bar@^1.0.0/pencilbox-announcement-bar.css");
+loadCSS("https://unpkg.com/pencilbox-announcement-bar@^1.0.0/announcement-widget.css");
 
 // Templates stored as strings
 const templates = {
