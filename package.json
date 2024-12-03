@@ -1,0 +1,30 @@
+{
+  "name": "pencilbox-announcement-bar",
+  "version": "1.0.0",
+  "description": "A brief description of your package",
+  "main": "dist/your-package.js", 
+  "scripts": {
+    "build": "your-build-command",  
+    "test": "your-test-command"     
+  },
+  "keywords": ["keyword1", "keyword2", "keyword3"],
+  "author": "Your Name",
+  "license": "MIT",  
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-org/your-repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/your-repo/issues"
+  },
+  "homepage": "https://github.com/your-org/your-repo#readme",
+  "peerDependencies": {
+    
+  }
+}
