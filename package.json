@@ -1,30 +1,27 @@
 {
   "name": "pencilbox-announcement-bar",
-  "version": "1.0.0",
-  "description": "A brief description of your package",
-  "main": "dist/your-package.js", 
+  "version": "1.0.1",
+  "description": "A customizable announcement bar for Pencilbox users.",
+  "main": "pencilbox-announcement-bar.js",  
+  "styles": "pencilbox-announcement-bar.css",  
   "scripts": {
-    "build": "your-build-command",  
-    "test": "your-test-command"     
-  },
-  "keywords": ["keyword1", "keyword2", "keyword3"],
-  "author": "Your Name",
-  "license": "MIT",  
-  "dependencies": {
-    
-  },
-  "devDependencies": {
-    
+    "publish": "pnpm publish --access public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-org/your-repo.git"
+    "url": "git+https://github.com/textileloom/pencilbox-announcement-bar.git"
   },
+  "keywords": [
+    "announcement-bar",
+    "pencilbox",
+    "UI"
+  ],
+  "author": "Textile Creative Studios, LLC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/your-org/your-repo/issues"
+    "url": "https://github.com/textileloom/pencilbox-announcement-bar/issues"
   },
-  "homepage": "https://github.com/your-org/your-repo#readme",
-  "peerDependencies": {
-    
-  }
+  "homepage": "https://github.com/textileloom/pencilbox-announcement-bar#readme"
 }
+
+

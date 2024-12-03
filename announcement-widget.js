@@ -7,8 +7,8 @@ function loadCSS(url) {
   document.head.appendChild(link);
 }
 
-// Load the CSS file from JSDelivr
-loadCSS('https://cdn.jsdelivr.net/gh/TextileLoom/pencilbox-announcement-bar@latest/announcement-widget.css');
+// Load the CSS file from UNPKG
+loadCSS("https://unpkg.com/pencilbox-announcement-bar@^1.0.0/pencilbox-announcement-bar.css");
 
 // Templates stored as strings
 const templates = {
