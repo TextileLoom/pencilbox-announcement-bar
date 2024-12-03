@@ -1,6 +1,6 @@
 {
   "name": "pencilbox-announcement-bar",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A customizable announcement bar for Pencilbox users.",
   "main": "pencilbox-announcement-bar.js",  
   "styles": "pencilbox-announcement-bar.css",  
