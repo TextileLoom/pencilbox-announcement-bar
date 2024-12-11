@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.pencilbox-countdown-wrapper * {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.pencilbox-countdown-wrapper {
+    background: #111111;
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 7px;
+}
+
+.pencilbox-countdown-wrapper .countdown-title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.pencilbox-countdown-wrapper .countdown {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.pencilbox-countdown-wrapper .countdown > div {
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+}
+
+.pencilbox-countdown-wrapper .digits {
+    display: flex;
+    justify-content: center;
+}
+
+.pencilbox-countdown-wrapper .digit {
+    margin: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 25px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #88B239;
+}
+
+.pencilbox-countdown-wrapper .unit {
+    margin-top: 3px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+}
+
+@media(max-width: 768px) {
+    .pencilbox-countdown-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pencilbox-countdown-wrapper .countdown > div {
+        margin: 3px;
+    }
+}
