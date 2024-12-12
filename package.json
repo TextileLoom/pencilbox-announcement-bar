@@ -1,9 +1,9 @@
 {
   "name": "pencilbox-announcement-bar",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A customizable announcement bar for Pencilbox users.",
-  "main": "pencilbox-announcement-bar.js",  
-  "styles": "pencilbox-announcement-bar.css",  
+  "main": "pencilbox-announcement-bar.js",
+  "styles": "pencilbox-announcement-bar.css",
   "scripts": {
     "publish": "pnpm publish --access public"
   },
@@ -23,5 +23,3 @@
   },
   "homepage": "https://github.com/textileloom/pencilbox-announcement-bar#readme"
 }
-
-
