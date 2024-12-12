@@ -1,4 +1,18 @@
 (function () {
+  // Function to load CSS file dynamically
+  function loadCSS(url) {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = url;
+    document.head.appendChild(link);
+  }
+
+  // Load the CSS file from UNPKG
+  loadCSS(
+    "https://unpkg.com/pencilbox-announcement-bar@1.0.3/countdown-widget.css"
+  );
+
   const showCountdown = () => {
     const countdownWrapper = document.querySelector(
       ".pencilbox-countdown-wrapper"
